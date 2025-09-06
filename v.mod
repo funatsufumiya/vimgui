@@ -1,5 +1,5 @@
 Module {
-	name:    'gg_imgui'
+	name:    'imgui'
 	version: '0.0.1'
 	deps:    []
 }
