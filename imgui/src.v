@@ -1,6 +1,7 @@
 module imgui 
 
 #flag -I @VROOT/cimgui
+#flag -I @VROOT/sokol
 
 #include "cimgui.h"
 
