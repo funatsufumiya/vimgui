@@ -5,7 +5,12 @@ module imgui
 
 // #flag windows -L @VMODROOT/libs/windows
 // #flag windows -lcimgui
-#flag windows @VMODROOT/libs/windows/cimgui.dll
+
+$if clang {
+    #flag windows @VMODROOT/libs/windows/release/cimgui.lib
+}$else{
+    #flag windows @VMODROOT/libs/windows/cimgui.dll
+}
 // #flag windows @VMODROOT/libs/windows/release/cimgui.lib
 
 #include "cimgui.h"
