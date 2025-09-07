@@ -1,9 +1,9 @@
 module imgui 
 
-#flag -I @VROOT/cimgui
-#flag -I @VROOT/sokol
+#flag -I @VMODROOT/cimgui
+#flag -I @VMODROOT/sokol
 
-#flag windows @VROOT/libs/windows/cimgui.dll
+#flag windows @VMODROOT/libs/windows/cimgui.dll
 
 #postinclude "cimgui.h"
 
