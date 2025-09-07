@@ -3,7 +3,10 @@ module imgui
 #flag -I @VMODROOT/cimgui
 #flag -I @VMODROOT/sokol
 
+// #flag windows -L @VMODROOT/libs/windows
+// #flag windows -lcimgui
 #flag windows @VMODROOT/libs/windows/cimgui.dll
+// #flag windows @VMODROOT/libs/windows/release/cimgui.lib
 
 #postinclude "cimgui.h"
 
