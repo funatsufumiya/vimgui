@@ -5,7 +5,7 @@ module imgui
 
 #flag windows @VROOT/libs/windows/cimgui.dll
 
-#include "cimgui.h"
+#postinclude "cimgui.h"
 
 //pub fn C.igColorEdit3(label charptr,col mut f32[3],flags int) bool
 pub fn C.igCheckbox(label voidptr, p_open voidptr)
