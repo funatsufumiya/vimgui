@@ -11,16 +11,16 @@ mut:
 fn frame_fn(app &App) {
 	app.gg.begin()
 
-	// imgui.C.igNewFrame()
+	C.igNewFrame()
 
-	// imgui.C.igSetNextWindowPos(&imgui.ImVec2{ x: 10, y: 10 }, 1) // ImGuiCond_Once = 1
-	// imgui.C.igSetNextWindowSize(&imgui.ImVec2{ x: 400, y: 100 }, 1)
-	// imgui.C.igBegin(c"Hello Dear ImGui!", 0, 0)
-	// imgui.C.igText(c"This is V + ImGui example.")
-	// imgui.C.igColorEdit3(c"Background", &state.clear_color, 0)
-	// imgui.C.igEnd()
+	// C.igSetNextWindowPos(&imgui.ImVec2{ x: 10, y: 10 }, 1) // ImGuiCond_Once = 1
+	// C.igSetNextWindowSize(&imgui.ImVec2{ x: 400, y: 100 }, 1)
+	C.igBegin(c"Hello Dear ImGui!", 0, 0)
+	C.igText(c"This is V + ImGui example.")
+	// C.igColorEdit3(c"Background", &state.clear_color, 0)
+	C.igEnd()
 
-	// imgui.C.igRender()
+	C.igRender()
 
 	app.gg.end()
 }
