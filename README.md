@@ -2,7 +2,8 @@
 
 ***WORK IN PROGRESS***
 
-Currently clang is only supported (`v -cc clang`)
+Currently clang or gcc is only supported. (`v -cc clang` or `v -cc gcc`)
+TCC is not supported.
 
 ## Usage
 
@@ -14,6 +15,7 @@ $ v run ~/.vmodules/imgui/example/example.v
 ## Acknowledgement
 
 Forked from [floooh/cimgui-sokol-starterkit](https://github.com/floooh/cimgui-sokol-starterkit) and [nsauzede/vig](https://github.com/nsauzede/vig).
+
 
 
 
