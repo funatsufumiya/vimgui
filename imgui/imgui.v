@@ -7,35 +7,35 @@ module imgui
 
 #include "cimgui.h"
 
-//fn C.igColorEdit3(label charptr,col mut f32[3],flags int) bool
-fn C.igCheckbox(label voidptr, p_open voidptr)
-fn C.igGetIO() voidptr
-fn C.igCreateContext(shared_font_atlas voidptr) voidptr
-fn C.igStyleColorsDark(dst voidptr)
-fn C.ImGui_ImplSDL2_InitForOpenGL(window voidptr, sdl_gl_context voidptr) bool
-fn C.ImGui_ImplOpenGL3_Init(glsl_version byteptr) bool
-fn C.ImGui_ImplSDL2_ProcessEvent(event voidptr) bool
-fn C.ImGui_ImplOpenGL3_NewFrame()
-fn C.ImGui_ImplSDL2_NewFrame(window voidptr)
-fn C.igNewFrame()
-fn C.igShowDemoWindow(p_open voidptr)
-fn C.igBegin(name byteptr, p_open voidptr, flags int) bool
-fn C.igText(byteptr, ...voidptr)
-//fn C.printf(&char, ...voidptr) int
-//fn C.igText()
-fn C.igSliderFloat(label byteptr, v voidptr, v_min f32, v_max f32, format byteptr, power f32) bool
-fn C.igColorEdit3(label byteptr, col voidptr, flags int) bool
-fn C.igButton(label byteptr, size C.ImVec2) bool
-fn C.igSameLine(offset_from_start_x f32, spacing f32)
-fn C.igEnd()
-fn C.igRender()
-fn C.igGetDrawData() voidptr
-fn C.ImGui_ImplOpenGL3_RenderDrawData(draw_data voidptr)
-fn C.glViewport(int, int, int, int)
-fn C.glClear(int)
-fn C.glClearColor(f32, f32, f32, f32)
-fn C.glewInit() int
-fn C.nk_window_get_bounds() C.nk_rect
+//pub fn C.igColorEdit3(label charptr,col mut f32[3],flags int) bool
+pub fn C.igCheckbox(label voidptr, p_open voidptr)
+pub fn C.igGetIO() voidptr
+pub fn C.igCreateContext(shared_font_atlas voidptr) voidptr
+pub fn C.igStyleColorsDark(dst voidptr)
+pub fn C.ImGui_ImplSDL2_InitForOpenGL(window voidptr, sdl_gl_context voidptr) bool
+pub fn C.ImGui_ImplOpenGL3_Init(glsl_version byteptr) bool
+pub fn C.ImGui_ImplSDL2_ProcessEvent(event voidptr) bool
+pub fn C.ImGui_ImplOpenGL3_NewFrame()
+pub fn C.ImGui_ImplSDL2_NewFrame(window voidptr)
+pub fn C.igNewFrame()
+pub fn C.igShowDemoWindow(p_open voidptr)
+pub fn C.igBegin(name byteptr, p_open voidptr, flags int) bool
+pub fn C.igText(byteptr, ...voidptr)
+//pub fn C.printf(&char, ...voidptr) int
+//pub fn C.igText()
+pub fn C.igSliderFloat(label byteptr, v voidptr, v_min f32, v_max f32, format byteptr, power f32) bool
+pub fn C.igColorEdit3(label byteptr, col voidptr, flags int) bool
+pub fn C.igButton(label byteptr, size C.ImVec2) bool
+pub fn C.igSameLine(offset_from_start_x f32, spacing f32)
+pub fn C.igEnd()
+pub fn C.igRender()
+pub fn C.igGetDrawData() voidptr
+pub fn C.ImGui_ImplOpenGL3_RenderDrawData(draw_data voidptr)
+pub fn C.glViewport(int, int, int, int)
+pub fn C.glClear(int)
+pub fn C.glClearColor(f32, f32, f32, f32)
+pub fn C.glewInit() int
+pub fn C.nk_window_get_bounds() C.nk_rect
 
 pub struct C.ImVec2 {
 pub mut:
