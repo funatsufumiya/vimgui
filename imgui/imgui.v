@@ -3,6 +3,8 @@ module imgui
 #flag -I @VROOT/cimgui
 #flag -I @VROOT/sokol
 
+#flag windows @VROOT/libs/windows/cimgui.dll
+
 #include "cimgui.h"
 
 //fn C.igColorEdit3(label charptr,col mut f32[3],flags int) bool
