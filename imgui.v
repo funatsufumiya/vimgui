@@ -8,7 +8,8 @@ module imgui
 #flag windows @VMODROOT/libs/windows/cimgui.dll
 // #flag windows @VMODROOT/libs/windows/release/cimgui.lib
 
-#postinclude "cimgui.h"
+#include "cimgui.h"
+// #postinclude "sokol_imgui.h"
 
 //pub fn C.igColorEdit3(label charptr,col mut f32[3],flags int) bool
 pub fn C.igCheckbox(label voidptr, p_open voidptr)
