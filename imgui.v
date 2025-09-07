@@ -5,16 +5,21 @@ module imgui
 
 // #flag windows -L @VMODROOT/libs/windows
 // #flag windows -lcimgui
+// #flag macos -L @VMODROOT/libs/macos
+// #flag macos -lcimgui
 
 $if clang {
     #flag windows @VMODROOT/libs/windows/release/cimgui.lib
 }$else{
     #flag windows @VMODROOT/libs/windows/cimgui.dll
 }
+
+#flag macos @VMODROOT/libs/macos/cimgui.dylib
+
 // #flag windows @VMODROOT/libs/windows/release/cimgui.lib
 
 #include "cimgui.h"
-// #postinclude "sokol_imgui.h"
+#postinclude "sokol_imgui.h"
 
 //pub fn C.igColorEdit3(label charptr,col mut f32[3],flags int) bool
 pub fn C.igCheckbox(label voidptr, p_open voidptr)
